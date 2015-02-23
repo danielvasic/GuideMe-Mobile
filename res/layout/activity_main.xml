@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/RelativeLayout1"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     
+     android:gravity="center"
+     android:orientation="vertical" >
+
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp" android:padding="2dp"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/mapsBtn"
+                style="@style/AppBaseTheme"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:drawablePadding="-90dp"
+                android:text="Karta"
+                android:textColor="#000" />
+
+            <Button
+                android:id="@+id/routeBtn"
+                style="@style/AppTheme"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="Isplaniraj rutu"
+                android:textColor="#000" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"  
+            android:paddingLeft="2dp" 
+            android:paddingRight="2dp" 
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/locationsBtn"
+                style="@style/AppBaseTheme"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="Lokacije"
+                android:textColor="#000" />
+
+            <Button
+                android:id="@+id/eventsBtn"
+                style="@style/AppTheme"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="Događaji"
+                android:textColor="#000" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp" android:padding="2dp"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/infoBtn"
+                style="@style/AppBaseTheme"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="Informacije"
+                android:textColor="#000" />
+
+            <Button
+                android:id="@+id/arBtn"
+                style="@style/AppTheme"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="AR"
+                android:textColor="#000" />
+
+        </TableRow>
+    </TableLayout>
+
+   </RelativeLayout>

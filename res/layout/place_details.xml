@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+		android:text="Title" 
+		android:id="@+id/placeNameTxt" 
+		android:textSize="24sp"
+		android:textStyle="bold|italic"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true" />
+    <ImageView
+        android:id="@+id/placeImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/placeNameTxt"
+        android:src="@drawable/im3" />
+    
+    <TextView
+        android:id="@+id/placeAddressTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textSize="16sp"
+        android:layout_alignTop="@+id/placeImage"
+        android:text="Address" />
+
+    <TextView
+        android:id="@+id/placeCreatedAtTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textSize="14sp"
+        android:layout_below="@+id/placeAddressTxt"
+        android:text="Created at." />
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/placeImage" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:orientation="vertical" >
+			 			
+			  <TextView 
+			        android:text="Description"
+			        android:id="@+id/placeDescTxt" 
+			        android:layout_width="wrap_content" 
+			        android:layout_height="wrap_content" />
+			  
+        </LinearLayout>
+</ScrollView>
+
+
+
+
+</RelativeLayout>
